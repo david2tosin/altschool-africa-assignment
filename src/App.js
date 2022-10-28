@@ -4,21 +4,25 @@ import About from './Pages/About/About';
 import Players from './Pages/Players/Players';
 import Users from './Pages/Users/Users';
 import NotFound from './Pages/NotFound/NotFound';
+import ErrorBoundary from './Pages/ErrorBoundary/ErrorBoundary';
 import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
+
     <div className="App">
       <div className="App-header">
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} >
-            <Route path="/about/players" element={<Players />} />
-          </Route >
-          <Route path="/users" element={<Users />} />
-          <Route path="/*" element={<NotFound />} />
-        </Routes >
+        <ErrorBoundary>
+          <Navigation />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} >
+              <Route path="/about/players" element={<Players />} />
+            </Route >
+            <Route path="/users" element={<Users />} />
+            <Route path="/*" element={<NotFound />} />
+          </Routes >
+        </ErrorBoundary>
       </div>
     </div >
   );
