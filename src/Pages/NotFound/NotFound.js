@@ -1,9 +1,10 @@
 import React from 'react';
+import './NotFound.css'
 
 function NotFound() {
     return (
         <div className='not-found'>
-            <h1>Opppss, 404 Not Found</h1>
+            <p>Opppss, Seems you've gone out of bounds</p>
         </div>
     )
 }

@@ -1,9 +1,10 @@
-.App {
-  text-align: center;
-  /* background-color: #282c34; */
-  background-image: url(../public/background-image.jpg);
+* {
+  background-size: cover;
 }
 
+.App {
+  text-align: center;
+}
 
 nav {
   display: flex;
@@ -11,6 +12,7 @@ nav {
 }
 
 .nav-link {
+  background-color: rgb(221, 77, 77);
   margin-top: 1em;
   border-radius: 5px;
   padding: 9px 20px;
@@ -20,13 +22,4 @@ nav {
   text-transform: lowercase;
   font-family: 'monospace';
   font: bolder;
-}
-
-.nav-link:hover {
-  background-color: rgb(173, 57, 14);
-}
-
-span:hover {
-  background-color: rgb(173, 57, 14);
-  cursor: pointer;
 }

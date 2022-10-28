@@ -1,23 +1,19 @@
 import React from 'react';
-import './About.css' 
+import './About.css'
+import { Link, Outlet } from 'react-router-dom';
 
 function About() {
     return (
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laudantium officia quam quisquam iste provident
-                mollitia sit velit unde. Ullam deleniti animi delectus, dolorum molestiae expedita odit ad eveniet vitae blanditiis
-                quaerat esse alias quasi minus obcaecati consequatur enim sequi libero totam perspiciatis quae et provident repellat
-                voluptate? Sapiente, id unde perspiciatis earum a cumque beatae corporis. Sed quis enim necessitatibus numquam
-                facilis id incidunt dolores eveniet rerum blanditiis officia, cupiditate ratione ab et voluptatem tempora eos minima
-                perspiciatis quasi fugit iusto perferendis? Maiores inventore iusto voluptatum harum. Qui minima ex libero
-                doloremque, accusantium commodi architecto exercitationem dolore suscipit quod magni est ipsum sint dolor aliquid
-                voluptatum earum quis! Earum quod non nobis corporis blanditiis, tempora tempore possimus, deleniti dignissimos
-                temporibus quam at laborum vitae quis optio iusto repellat quos eaque aut et similique ratione aliquam veritatis
-                quaerat! Ullam assumenda aspernatur error officia porro numquam itaque, obcaecati ut nostrum earum, at natus. Nisi,
-                in! Dolores sunt, rerum beatae facere architecto modi commodi? Quas provident temporibus praesentium quod accusamus
-                pariatur quae nesciunt, voluptatum iusto numquam vitae, libero, fuga eum ullam aut! Dolores deserunt natus nesciunt
-                odio culpa nisi quod, sapiente ducimus cumque unde nostrum non laudantium totam. Explicabo veniam voluptatibus
-                earum.</p>
+            <nav>
+                <Link className='nav-link' to="/about/players">Players</Link>
+            </nav>
+
+            <article>
+                <p>The Los Angeles Lakers are an American professional basketball team based in Los Angeles. The Lakers compete in the National Basketball Association (NBA) as a member of the league's Western Conference Pacific Division. The Lakers play their home games at Crypto.com Arena, an arena shared with the NBA's Los Angeles Clippers, the Los Angeles Sparks of the Women's National Basketball Association, and the Los Angeles Kings of the National Hockey League. The Lakers are one of the most successful teams in the history of the NBA, and have won 17 NBA championships, tied with the Boston Celtics for the most in NBA history</p>
+            </article>
+
+            <Outlet />
         </div>
     )
 }

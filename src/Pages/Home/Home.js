@@ -4,7 +4,9 @@ import './Home.css';
 
 function Home() {
     return (
-        <h1>Welcome to the Home of <span>Lakers Basketball</span></h1>
+        <div className="home">
+            <h1>Welcome to the Home of the Lakers</h1>
+        </div>
     )
 }
 

@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
+import Players from './Pages/Players/Players';
 import Users from './Pages/Users/Users';
 import NotFound from './Pages/NotFound/NotFound';
 import { Routes, Route, Link } from 'react-router-dom';
@@ -12,7 +13,9 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About />} >
+            <Route path="/about/players" element={<Players />} />
+          </Route >
           <Route path="/users" element={<Users />} />
           <Route path="/*" element={<NotFound />} />
         </Routes >
