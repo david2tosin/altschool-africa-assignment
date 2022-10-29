@@ -5,14 +5,14 @@ import './Users.css';
 function Users() {
     const [user, setUser] = useState(1);
     const { loading, error, data } = useFetch(
-        `https://randomuser.me/api/?page=${user}&results=100&seed=abc`
+        `https://randomuser.me/api/?page=${user}&results=50&seed=abc`
     );
 
-    const PER_USER = 10;
+    const PER_USER = 5;
     const users = 10;
     const nextUsers = user * PER_USER - PER_USER;
     if (loading) {
-        return <div className="loading-container">Almost there..</div>;
+        return <div className="loading-container">Loading..</div>;
     }
 
     if (!loading && error) {

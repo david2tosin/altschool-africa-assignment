@@ -12,14 +12,14 @@ nav {
 }
 
 .nav-link {
-  background-color: rgb(221, 77, 77);
+  background-color: rgb(91, 135, 230);
   margin-top: 1em;
   border-radius: 5px;
   padding: 9px 20px;
   text-decoration: none;
   color: white;
   font-size: 1.6rem;
-  text-transform: lowercase;
-  font-family: 'monospace';
+  text-transform: capitalize;
+  font-family: sans-serif;
   font: bolder;
 }
