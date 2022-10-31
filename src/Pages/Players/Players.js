@@ -6,7 +6,7 @@ import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 function Players() {
     return (
         <div className="players">
-            <h2>No playera found </h2>
+            <h2>No players found </h2>
         </div>
     )
 }
